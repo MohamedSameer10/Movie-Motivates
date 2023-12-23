@@ -1,0 +1,932 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu{
+    display: none;
+}
+
+nav ul li .line,nav ul li .dark-mode{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    padding: 0.4rem;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    transition: all .3s;
+    top: 0;
+    z-index: 12;
+}
+
+#color{
+    background-color: white;
+}
+.navbar,nav ul,nav ul li,.profile,.profile-photo,.profile-bar{
+    display: flex;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 1.7rem;
+    color: red;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+
+nav ul{
+    width: 35vw;
+    justify-content: center;
+    margin: 0 2rem;
+}
+
+nav ul li{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+nav ul li a{
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+nav ul li a:hover,nav ul li:first-child a{
+    color: red;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin: 0 0.7rem;
+}
+
+.bg{
+    background-color : red;
+    transform: translateX(15%) skewX(25deg);
+    border-radius: 0.7rem;
+    padding: 0.7rem 0;
+    margin-top: -.15rem;
+}
+
+#home{
+    background-color: white;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+
+.bg li{
+    transform: skewX(-25deg);
+}
+
+.bg li a:hover,.bg #home{
+    color: black;
+    background-color: white;
+    border-radius: 0.9rem;
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+}
+
+.bgcolor i:hover{
+    background-color: red;
+    color: white;
+    margin: 0 0.1rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.bgcolor i{
+    color: black;
+    margin-left: .2rem;
+}
+
+.profile-photo img{
+    width: 3.2vw;
+    border-radius: 50%;
+}
+
+.additional-profile-setting{
+    position: absolute;
+    transform: translateY(100%) translateX(10%);
+    box-shadow: #00000059 0px 5px 15px;
+    width: 15vw;
+    opacity: 0;
+    border-radius: 0.7rem;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+
+.swipe{
+    transform: translateY(60%) translateX(10%);
+    opacity: 1;
+}
+
+
+.profile-bar button{
+    width: 9vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    transition: all 0.3s;
+}
+
+button{
+    transition: all 0.4s;
+}
+
+.btn button:hover,.button button:hover{
+    transform: scale(0.8);
+}
+
+.rotate{
+    display: block;
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
+    transform: rotate(180deg);
+}
+
+.additional-profile-setting ul li a{
+    color: black;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.additional-profile-setting ul li{
+    text-align: center;
+    padding: 0.7rem;
+    transition: all 0.3s;
+}
+
+.additional-profile-setting ul li:first-child{
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.additional-profile-setting ul li:last-child{
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+
+
+i{
+    padding-right: 0.4rem;
+}
+.additional-profile-setting ul li:hover{
+    color: rgb(252, 252, 252);
+    background-color: red;
+}
+
+.additional-profile-setting li:hover a{
+    color: white;
+}
+
+.profile{
+    flex-grow: 0.3;
+    margin: 0 0 0 10rem;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.profile-bar{
+    display: flex;
+}
+
+.move{
+    transform: translateX(90%);
+}
+
+.dark-mode{
+    position: relative;
+    width: 5vw;
+    height: 6vh;
+    background: url(https://vidcdn.123rf.com/450nwm/ispywelding/ispywelding2210/ispywelding221000041.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-style: dotted;
+    /* background-repeat: no-repeat; */
+    border-width: 2px;
+    border-color: white;
+    border-radius: 4rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.dark-mode button{
+    width: 45%;
+    height: 4.5vh;
+    background-image: url(https://e7.pngegg.com/pngimages/38/595/png-clipart-seal-seal-gold-black-round-gold-frame-mirror-badges-and-labels-thumbnail.png);
+    border: none;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 0.2rem;
+    margin-top: 0.17rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#profiletext{
+    border: none;
+    background-color: transparent;
+    padding:  0 1rem;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.profile-bar button + i{
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+aside{
+    margin-left: -0.5rem;
+    width: 4vw;
+    height: 100vh;
+    margin-top: 0.5rem;
+    background-color: black;
+    position: fixed;
+    left: 0;
+}
+
+aside i{
+    color: white;
+    transition: all 0.3s;
+}
+
+aside i:hover{
+    color: red;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin-left: -0.2rem;
+}
+
+.sidebar i:first-child{
+    margin-top: 1rem;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    margin-left: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    margin-left: 2.5rem;
+    margin-top: 3rem;
+}
+
+main .banner-1{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.764),black), url(./images/resize.jpg);
+    background-size: cover;
+    height: 95vh;
+
+}
+
+.banner-1 img{
+    width: 25vw;
+    margin: 3rem 0 0 3rem;
+}
+
+.banner-1 p{
+    width: 65%;
+    color: red;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 3rem;
+}
+
+.banner-1 button{
+    margin: 1rem 0 0 3rem;
+    width: 10vw;
+    height: 8vh;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: red;
+    color: rgb(192, 191, 191);
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+nav ul li{
+    margin-left: 0.5rem;
+}
+.movies{
+    background: linear-gradient(to bottom,black,black);
+    padding: 0rem 0rem 0 3rem;
+}
+
+.text h1{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
+.scroll{
+    width: 93.5vw;
+    display: flex;
+    overflow-x: scroll;
+    padding: 2rem;
+    margin-left: -0.8rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.movie{
+    min-width: 30vw;
+    height: 40vh;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.movie .head{
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 2rem;
+}
+
+.movie p{
+    font-size: 0.7rem;
+    width: 70%;
+    margin: 0 auto;
+}
+.movie .head,.movie .para,.movie button{
+    opacity: 0;
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.movie::after{
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.808);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    border-radius: 1rem;
+}
+
+.movies .text h1{
+    padding-top: 1.5rem;
+}
+
+.movie:hover::after{
+    opacity: 1;
+}
+
+.movie:hover{
+    transform: scale(1.2);
+    border-radius: 1rem;
+    margin-right: 3rem;
+    margin-left: 5rem;
+}
+
+.movie button{
+    margin-top: 0.8rem;
+    border-radius: 0.7rem;
+}
+.movie button{
+    width: 8vw;
+    height: 8vh;
+    background-color: red;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.movie-1{
+    background: url(./images/1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -2rem;
+}
+.movie-2{
+    background: url(./images/2.jpeg);
+}
+.movie-3{
+    background: url(./images/3.jpg);
+}
+.movie-4{
+    background: url(./images/4.jpg);
+}
+.movie-5{
+    background: url(./images/5.jpg);
+}
+.movie-6{
+    background: url(./images/6.jpg);
+}
+.movie-7{
+    background: url(./images/7.jpg);
+}
+
+.movie-2,.movie-3,.movie-4,.movie-5,.movie-6,.movie-7{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2rem;
+}
+
+.movie:hover .head,.movie:hover .para,.movie:hover button{
+    opacity: 1;
+}
+
+.mov-1{
+    background: url(./images/10.jpg);
+    background-size: cover;
+}
+.mov-2{
+    background: url(./images/11.jpg);
+}
+.mov-3{
+    background: url(./images/12.jpg);
+}
+.mov-4{
+    background: url(./images/13.jpg);
+}
+.mov-5{
+    background: url(./images/14.jpg);
+}
+.mov-6{
+    background: url(./images/15.jpg);
+}
+.mov-7{
+    background: url(./images/16.jpg);
+}
+
+.mov-2,.mov-3,.mov-4,.mov-5,.mov-6,.mov-7{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner-2{
+    height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.764),black), url(./images/f-2.jpg  );
+}
+
+.movi-1{
+    background: url(./images/17.jpg);
+}
+.movi-2{
+    background: url(./images/18.jpg);
+}
+.movi-3{
+    background: url(./images/19.jpg);
+}
+.movi-4{
+    background: url(./images/8.jpg);
+}
+.movi-5{
+    background: url(./images/9.jpg);
+}
+.movi-6{
+    background: url(./images/2.jpeg);
+}
+.movi-7{
+    background: url(./images/16.jpg);
+}
+
+.movi-1,.movi-2,.movi-3,.movi-4,.movi-5,.movi-6,.movi-7{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mo-1{
+    background: url(./images/sup1.jpg);
+}
+.mo-2{
+    background: url(./images/sup8.jpg);
+}
+.mo-3{
+    background: url(./images/sup3.jpg);
+}
+.mo-4{
+    background: url(./images/sup4.jpg);
+}
+.mo-5{
+    background: url(./images/sup5.jpg);
+}
+.mo-6{
+    background: url(./images/sup6.jpg);
+}
+.mo-7{
+    background: url(./images/sup7.jpg);
+}
+
+.mo-1,.mo-2,.mo-3,.mo-4,.mo-5,.mo-6,.mo-7{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#te{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+}
+
+
+.m-1{
+    background: url(./images/sup9.jpg);
+}
+.m-2{
+    background: url(./images/sup10.jpg);
+}
+.m-3{
+    background: url(./images/sup11.jpg);
+}
+.m-4{
+    background: url(./images/sup12.jpg);
+}
+.m-5{
+    background: url(./images/sup13.jpg);
+}
+.m-6{
+    background: url(./images/sup14.jpg);
+}
+.m-7{
+    background: url(./images/sup15.jpg);
+}
+
+.m-1,.m-2,.m-3,.m-4,.m-5,.m-6,.m-7{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moviess-1{
+    background: url(./images/sup16.jpg);
+}
+.moviess-2{
+    background: url(./images/sup17.jpg);
+}
+.moviess-3{
+    background: url(./images/sup18.jpg);
+}
+.moviess-4{
+    background: url(./images/sup19.jpg);
+}
+.moviess5{
+    background: url(./images/sup20.jpg);
+}
+.moviess-6{
+    background: url(./images/PRIEAS.jpg);
+}
+.moviess-7{
+    background: url(./images/HITMAN.jpg);
+}
+
+.moviess-1,.moviess-2,.moviess-3,.moviess-4,.moviess-5,.moviess-6,.moviess-7{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    margin-left: 2.5rem;
+    padding: 1rem;
+    background-color: rgb(24, 24, 24);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px,1fr));
+}
+
+.grid-container div{
+    padding: 1rem;
+}
+
+.grid-container ul{
+    padding-top: 0.5rem;
+}
+.grid-container h3{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container p,.grid-container ul li{
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.grid-container ul li:hover{
+    text-decoration: underline;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(83, 83, 83);
+}
+
+.foot{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.con{
+    display: flex;
+    color: white;
+    width: 65vw;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.con li i{
+    color: gold;
+}
+
+.foot ul:last-child{
+    display: flex;
+    width: 35vw;
+    margin-left: 2rem;
+}
+
+.foot ul:last-child li{
+    width: 3vw;
+    height: 4vh;
+    margin-left: 0.2rem;
+}
+
+.foot ul:last-child li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.15rem;
+}
+
+@media (max-width: 600px){
+
+    aside,.profile{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        max-height: 8vh;
+    }
+
+    nav{
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        top: 66px;
+        right: -900px;
+        overflow-y: hidden;
+        transition: all 0.5s;
+    }
+
+    .height{
+        right: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        margin: 0 0 0 auto;
+        padding: 0.9rem;
+    }
+
+    /* nav ul li{
+        width: 100%;
+    } */
+
+    nav ul li a{
+        padding: 0.9rem;
+        width: 100%;
+        overflow: hidden;
+        font-size: 1.3rem;
+    }
+
+    nav ul li .dark-mode{
+        display: block;
+        width: 14vw;
+        background-color: red;
+        height: 4vh;
+        margin-left: -1.3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+    .dark-mode button{
+        border: none;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        height: 3vh;
+        width: 6vw;
+    }
+
+    nav ul li .line{
+        display: block;
+        position: absolute;
+        width: 750px;
+    }
+
+    .bg{
+        background-color: black;
+        transform: skew(0deg);
+        border-radius: 0;
+    }
+
+    .bg li:first-child{
+        color: red;
+        margin-left: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    .bg li{
+        transform: skew(0deg);
+    }
+
+    .bg #home{
+        background-color: transparent;
+    }
+
+    #home{
+        background-color: transparent;
+        border-radius: 0;
+        margin-bottom: 0.7rem;
+        margin-left: -0.01rem;
+    }
+
+    .movie{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar{
+        display: flex;
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title h1{
+        margin-top: -1rem;
+    }
+
+    .menu{
+        display: block;
+        color: white;
+        align-self: center;
+        margin-right: 2rem;
+    }
+
+    .menu i{
+        font-size: 2.5rem;
+    }
+
+    .navbar .title{
+        margin-top: 1rem;
+    }
+    
+    main .banner-1,main #banner-2{
+        height: 43vh;
+        padding: 2rem;
+    }
+    
+    .banner-1 img{
+        width: 45vw;
+        margin-left: -0.9rem;
+    }
+
+    .te{
+        margin-left: -1.5rem;
+    }
+    
+    .banner-1 p{
+        width: 80%;
+        font-size: 0.4rem;
+        text-align: justify;
+        margin-left: -0.9rem;
+    }
+    
+    .banner-1 button{
+        width: 30vw;
+        height: 6vh;
+        margin-left: -0.9rem;
+    }
+
+    .scroll{
+        margin-left: -2rem;
+        width: 93vw;
+        height: 30vh;
+    }
+
+    .movie .head{
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .movies .text{
+        margin-left: -1.5rem;
+    }
+
+    .movie p{
+        font-size: 0.5rem;
+        width: 100%;
+    }
+
+    .movie button{
+        width: 20vw;
+        height: 3vh;
+    }
+
+    .scroll .movie{
+        min-width: 65vw;
+        height: 88%;
+    }
+
+    .movie{
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    main,footer{
+        margin-left: auto;
+    }
+
+    .grid-container{
+        grid-template-columns: 300px;
+    }
+
+    .foot{
+        flex-direction: column;
+    }
+
+    .foot .con{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .foot ul:last-child{
+        width: 100%;
+        margin-left: auto;
+        margin-top: 2rem;
+    }
+    .foot ul:last-child li{
+        width: 15vw;
+        height: 2.5vh;
+    }
+
+    .foot .con{
+        flex-direction: column;
+        gap: 1em;
+        margin-left: 0.9rem;
+    }
+}
+
+
+
